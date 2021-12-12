@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задания №1</title>
+  </head>
+  <body>
+    <script>
+      let con = "";
+
+      for (i = 0; i < 7; i++) {
+        con += "#";
+        console.log(con);
+      }
+
+      let a = 1;
+      for (a = 1; a <= 100; a++) {
+        if (a % 15 == 0) {
+          console.log("FizzBuzz");
+        } else if (a % 3 == 0) {
+          console.log("Fizz");
+        } else if (a % 5 == 0) {
+          console.log("Buzz");
+        } else {
+          console.log(a);
+        }
+      }
+
+      // let size = 8;
+      let empty = "";
+
+      for (i = 0; i < 8; i++) {
+        for (a = 0; a < 8; a++) {
+          if ((i + a) % 2 == 0) {
+            empty += " ";
+          } else {
+            empty += "*";
+          }
+        }
+        empty += "\n";
+      }
+      console.log(empty);
+    </script>
+  </body>
+</html>
